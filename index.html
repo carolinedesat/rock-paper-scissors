@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Rock, Paper & Scissors</title>
-  </head>
-  <body>
-    <header>
-      <h1>Rock, Paper & Scissors</h1>
-      <div id="player1">
-        <input type="text" id="player1Name" placeholder="Enter Player 1 Name" />
-      </div>
-      <div id="player2">
-        <input type="text" id="player2Name" placeholder="Enter Player 2 Name" />
-      </div>
-      <button id="playButton">Play</button>
-    </header>
-    <section>
-      <div id="player1Display">
-        <h2>Player 1</h2>
-        <img src="rock.png" alt="Player 1 Image" id="player1Image" />
-      </div>
-      <div id="player2Display">
-        <h2>Player 2</h2>
-        <img src="rock.png" alt="Player 2 Image" id="player2Image" />
-      </div>
-    </section>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Rock, Paper & Scissors</title>
+</head>
+
+<body>
+  <header>
+    <h1>Rock, Paper & Scissors</h1>
+
+    <button class="btn--play">Play</button>
+  </header>
+  <section class="timer">
+    <div id="player1">
+      <h2 class="player1--name">Player 1</h2>
+      <img src="rock.png" alt="Player 1 Image" class="player1--image" />
+    </div>
+    <div id="player2">
+      <h2 class="player2--name">Player 2</h2>
+      <img src="rock.png" alt="Player 2 Image" class="player2--image" />
+    </div>
+  </section>
+
+  <div class="modal">
+    <p class="modal--text">Modal</p>
+    <button class="btn--playagain">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
