@@ -16,19 +16,32 @@
   </header>
   <section class="timer">
     <div id="player1">
-      <h2 class="player1--name">Player 1</h2>
-      <img src="rock.png" alt="Player 1 Image" class="player1--image" />
+      <h2 class="display--player1">Player 1</h2>
+      <img src="rock.png" alt="Player 1 Image" class="image--player1" />
     </div>
     <div id="player2">
-      <h2 class="player2--name">Player 2</h2>
-      <img src="rock.png" alt="Player 2 Image" class="player2--image" />
+      <h2 class="display--player2">Player 2</h2>
+      <img src="rock.png" alt="Player 2 Image" class="image--player2" />
     </div>
   </section>
 
-  <div class="modal">
-    <p class="modal--text">Modal</p>
+  <div class="welcomeModal">
+    <p class="text--welcomemodal">Welcome to Rock, Paper & Scissors! <br> Please enter Player 1 and Player 2 names
+      below:</p>
+    <input type="text" class="name--player1" placeholder="Enter Player 1 Name">
+    <input type="text" class="name--player2" placeholder="Enter Player 2 Name">
+    <!-- <button class="btn--submitplayer">OK</button> -->
+  </div>
+
+  <div class="timer--modal">
+    <p class="text--timermodal">Modal</p>
+  </div>
+
+  <div class="resultModal">
+    <p class="text--resultmodal">Modal</p>
     <button class="btn--playagain">Play Again</button>
   </div>
+
 
   <script src="script.js"></script>
 </body>
