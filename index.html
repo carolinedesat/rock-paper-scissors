@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monofett&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper & Scissors</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Rock, Paper & Scissors</title>
-</head>
+  <body>
+    <header>
+      <h1>Rock, Paper & Scissors</h1>
+      <button class="btn--play">Play</button>
+    </header>
 
-<body>
-  <header>
-    <h1>Rock, Paper & Scissors</h1>
+    <section>
+      <div class="player1">
+        <h2 class="display--player1">Player 1</h2>
+        <img
+          src="rockpaperscissors.jpg"
+          alt="Player 1 Image"
+          class="image--player1"
+        />
+      </div>
+      <div class="player2">
+        <h2 class="display--player2">Player 2</h2>
+        <img
+          src="rockpaperscissors.jpg"
+          alt="Player 2 Image"
+          class="image--player2"
+        />
+      </div>
+    </section>
 
-    <button class="btn--play">Play</button>
-  </header>
-  <section class="timer">
-    <div id="player1">
-      <h2 class="display--player1">Player 1</h2>
-      <img src="rock.png" alt="Player 1 Image" class="image--player1" />
+    <div class="welcome--modal">
+      <p class="text--welcomemodal">
+        Welcome to Rock, Paper & Scissors! 🪨📃✂️
+      </p>
+      <input
+        type="text"
+        class="name--player1"
+        placeholder="Enter Player 1 Name"
+      />
+      <input
+        type="text"
+        class="name--player2"
+        placeholder="Enter Player 2 Name"
+      />
+      <button class="btn--submitplayer">OK</button>
     </div>
-    <div id="player2">
-      <h2 class="display--player2">Player 2</h2>
-      <img src="rock.png" alt="Player 2 Image" class="image--player2" />
+
+    <div class="timer--modal">
+      <p class="text--timermodal">Modal</p>
     </div>
-  </section>
 
-  <div class="welcomeModal">
-    <p class="text--welcomemodal">Welcome to Rock, Paper & Scissors! <br> Please enter Player 1 and Player 2 names
-      below:</p>
-    <input type="text" class="name--player1" placeholder="Enter Player 1 Name">
-    <input type="text" class="name--player2" placeholder="Enter Player 2 Name">
-    <!-- <button class="btn--submitplayer">OK</button> -->
-  </div>
+    <div class="result--modal">
+      <p class="text--resultmodal">Modal</p>
+    </div>
 
-  <div class="timer--modal">
-    <p class="text--timermodal">Modal</p>
-  </div>
-
-  <div class="resultModal">
-    <p class="text--resultmodal">Modal</p>
-    <button class="btn--playagain">Play Again</button>
-  </div>
-
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
