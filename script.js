@@ -92,13 +92,17 @@ const gameResult = function () {
     (random1 === 2 && random2 === 1) ||
     (random1 === 3 && random2 === 2)
   ) {
-    resultModalText.textContent = `${namePlayer1.value} wins! 😸`;
+    resultModalText.textContent = `${correctPlayerName(
+      namePlayer1.value
+    )} wins! 😸`;
   } else if (
     (random1 === 1 && random2 === 2) ||
     (random1 === 2 && random2 === 3) ||
     (random1 === 3 && random2 === 1)
   ) {
-    resultModalText.textContent = `${namePlayer2.value} wins! 😸`;
+    resultModalText.textContent = `${correctPlayerName(
+      namePlayer2.value
+    )} wins! 😸`;
   }
 };
 
