@@ -62,10 +62,10 @@ const play = function () {
   // If time > 0, displays the timer and starts the countdown
   if (time > 0) {
     setTimeout(play, 1000);
-    timerModalText.textContent = time;
+    timerModalText.textContent = `${time}⏳`;
     // If time = 0, displays the result
   } else if (time === 0) {
-    result();
+    gameResult();
     resultModal.classList.remove("hidden");
     btnPlay.textContent = "Play Again";
   }
@@ -82,7 +82,7 @@ const randomGenerator = function () {
 };
 
 // Defines the winner depending on the random number and game rules
-const result = function () {
+const gameResult = function () {
   randomGenerator();
 
   if (random1 === random2) {
